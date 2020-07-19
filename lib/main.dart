@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import "header.dart";
+import "footer.dart";
 
 void main() {
   runApp(App());
@@ -15,6 +16,7 @@ class App extends StatelessWidget {
         body: Center(
             child: Text("Hello, Flutter!"),
         ),
+        bottomNavigationBar: Footer(),
       ),
     );
   }

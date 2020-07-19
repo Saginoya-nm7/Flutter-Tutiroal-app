@@ -7,7 +7,20 @@ class Header extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      leading: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Icon(Icons.settings),
+      ),
+      actions: <Widget>[
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Icon(Icons.add),
+        ),
+      ],
       title: Text("Home"),
+      backgroundColor: Colors.black87,
+      centerTitle: true,
+      elevation: 0.0,
     );
   }
 }
